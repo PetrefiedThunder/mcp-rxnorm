@@ -1,25 +1,32 @@
 # mcp-rxnorm
 
-MCP server for [RxNorm](https://www.nlm.nih.gov/research/umls/rxnorm/) — drug name normalization, interactions, NDC codes, and drug classes. No API key required.
+Look up drug names, ingredients, interactions, and NDC codes via NLM RxNorm API.
+
+> **Free API** — No API key required.
 
 ## Tools
 
 | Tool | Description |
 |------|-------------|
-| `search_drugs` | Search drugs by brand or generic name |
-| `get_drug_info` | Get detailed info and related concepts by RxCUI |
-| `get_interactions` | Check drug-drug interactions |
-| `normalize_drug_name` | Fuzzy-match/normalize misspelled or brand names |
-| `get_ndc_codes` | Get National Drug Code identifiers |
-| `get_drug_classes` | Get pharmacologic/therapeutic classes |
+| `search_drugs` | Search for drugs by name. Returns RxCUI identifiers and normalized names. |
+| `get_drug_info` | Get detailed information about a drug by RxCUI. |
+| `get_interactions` | Get drug-drug interactions for one or more drugs. |
+| `normalize_drug_name` | Normalize a drug name to its standard RxNorm representation. |
+| `get_ndc_codes` | Get NDC (National Drug Code) codes for a drug by RxCUI. |
+| `get_drug_classes` | Get pharmacologic and therapeutic drug classes for a drug. |
 
-## Install
+## Installation
 
 ```bash
-npm install && npm run build
+git clone https://github.com/PetrefiedThunder/mcp-rxnorm.git
+cd mcp-rxnorm
+npm install
+npm run build
 ```
 
 ## Usage with Claude Desktop
+
+Add to your `claude_desktop_config.json`:
 
 ```json
 {
@@ -32,7 +39,11 @@ npm install && npm run build
 }
 ```
 
-## No API Key Required
+## Usage with npx
+
+```bash
+npx mcp-rxnorm
+```
 
 ## License
 
