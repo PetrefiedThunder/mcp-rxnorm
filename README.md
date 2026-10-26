@@ -47,4 +47,4 @@ npx mcp-rxnorm
 
 ## License
 
-MIT
+Apache-2.0
