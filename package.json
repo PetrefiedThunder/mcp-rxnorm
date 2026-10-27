@@ -1,7 +1,7 @@
 {
   "name": "mcp-rxnorm",
   "version": "1.0.0",
-  "description": "MCP server for RxNorm \u2014 drug normalization, interactions, NDC codes",
+  "description": "MCP server for RxNorm — drug normalization, interactions, NDC codes",
   "main": "index.js",
   "scripts": {
     "build": "tsc",
@@ -17,7 +17,7 @@
     "interactions"
   ],
   "author": "",
-  "license": "MIT",
+  "license": "Apache-2.0",
   "type": "module",
   "engines": {
     "node": "^20.19.0 || >=22.12.0"
